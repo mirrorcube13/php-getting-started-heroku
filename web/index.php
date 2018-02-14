@@ -20,7 +20,15 @@ Hello
     <p>form: <?php echo htmlspecialchars($_GET['sad']); ?></p>
     <div style="height: 100px;width: 100px; background-color:<?php echo htmlspecialchars($_GET['sad']); ?>"></div>
     <p>Try again? <a href="/index.php">Yes!</a></p>
-  <?php } ?>
+  <?php } 
+
+
+
+else {
+    echo "<style>body { bacgkround: #ebaeba; }</style>";
+}
+
+  ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
   
