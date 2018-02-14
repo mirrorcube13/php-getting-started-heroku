@@ -9,7 +9,7 @@
 <body>
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
-  <body style="background-color:<?php echo htmlspecialchars($_GET['sad2']); ?>"></body>
+  <body style="background-color:<?php echo htmlspecialchars($_GET['sadc2']); ?>"></body>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p style="font-weight: bold;">text: <?php echo htmlspecialchars($_GET['text1']); ?></p>
