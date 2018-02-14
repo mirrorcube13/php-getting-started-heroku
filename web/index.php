@@ -25,7 +25,7 @@ Hello
 
 
 else {
-    echo "<style>body { bacgkround: #ebaeba; }</style>";
+    echo "body { bacgkround: #ebaeba; }";
 }
 
   ?>
