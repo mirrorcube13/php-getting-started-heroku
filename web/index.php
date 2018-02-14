@@ -11,7 +11,9 @@ Hello
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
+    <p style="color:red;font-weight: bold;">text1: <%= query['text1'] %></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
+
   <?php } ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
@@ -20,6 +22,7 @@ Hello
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
     <p>
+      <input id="my-text" type="text" required maxlength="5" placeholder="Введите однострочный текст" name="text1"><br>
       <label for="my-radio-yes">radio Yes: </label>
       <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
       <label for="my-radio-no">radio No: </label>
