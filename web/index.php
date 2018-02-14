@@ -9,7 +9,7 @@
 <body>
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
-  <body style="background-color:<?php echo htmlspecialchars($_GET['sad']); ?>"></body>
+  <body style="background-color:<?php echo htmlspecialchars($_GET['sad2']); ?>"></body>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p style="font-weight: bold;">text: <?php echo htmlspecialchars($_GET['text1']); ?></p>
@@ -35,6 +35,8 @@ Hello
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
       <textarea id="my-textarea" style="resize:none" placeholder="Введите многострочный текст" name="text2"></textarea><br>
       <label for="my-color">color: </label>       <input id="my-color" type="color" name="sad"><br><br>
+    <br>
+          <label for="my-color">fon-color: </label>       <input id="my-color" type="color" name="sad2"><br><br>
     <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
