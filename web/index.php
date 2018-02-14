@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Form test</title>
 </head>
-<body>
+<body style="background: #BEF9EA;">
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p style="color:red;font-weight: bold;">text: <?php echo htmlspecialchars($_GET['text1']); ?></p>
-    <p>Try again? <a href="/index.php">Yes!</a></p>
+    
     <p style="color:red;font-weight: bold;">text2: <?php echo htmlspecialchars($_GET['text2']); ?></p>
 
 
     <p>form: <?php echo htmlspecialchars($_GET['sad']); ?></p>
     <div style="height: 100px;width: 100px; background-color:<?php echo htmlspecialchars($_GET['sad']); ?>"></div>
-
+    <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
